@@ -1,7 +1,7 @@
 {
-  "name": "rsmq-worker-password",
+  "name": "rsmqw",
   "version": "1.0.0",
-  "description": "![RSMQ-Worker](https://trello-attachments.s3.amazonaws.com/5481963992d9ba3848568a1b/600x194/61b3b6117eeb0881c919c6996adb2620/rsmq_worker_small.png)",
+  "description": "rsmqw",
   "main": "index.js",
   "directories": {
     "example": "example",
@@ -13,7 +13,7 @@
     "coffeescript": "^2.5.1",
     "lodash": "4.x",
     "mpbasic": "0.0.x",
-    "rsmq": "0.12.x"
+    "rsmqw": "1.0.0"
   },
   "devDependencies": {
     "coffee-coverage": "1.x",

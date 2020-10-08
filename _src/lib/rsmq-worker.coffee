@@ -55,7 +55,7 @@ class RSMQWorker extends require( "mpbasic" )()
 			# **RSMQWorker.host** *String* Host to connect to redis if no `rsmq` or `redis` instance has been defiend
 			host: "localhost"
 
-			password: null
+			password: ""
 
 			# **RSMQWorker.host** *Number* Port to connect to redis if no `rsmq` or `redis` instance has been defiend
 			port: 6379

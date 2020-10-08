@@ -1,19 +1,19 @@
 {
-  "name": "rsmq-worker",
-  "version": "0.5.2",
+  "name": "rsmq-worker-password",
+  "version": "6.0",
   "description": "RSMQ helper to simply implement a worker around the message queue",
   "keywords": [],
-  "homepage": "https://github.com/mpneuried/rsmq-worker",
-  "bugs": "https://github.com/mpneuried/rsmq-worker/issues",
+  "homepage": "https://github.com/jonascsantos/rsmq-worker",
+  "bugs": "https://github.com/jonascsantos/rsmq-worker/issues",
   "author": {
-    "name": "mpneuried",
+    "name": "jonascsantos",
     "email": "",
-    "url": "https://github.com/rsmq-worker"
+    "url": "https://github.com/jonascsantos/rsmq-worker"
   },
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpneuried/rsmq-worker.git"
+    "url": "https://github.com/jonascsantos/rsmq-worker.git"
   },
   "scripts": {
     "test": "COFFEECOV_INIT_ALL=false mocha --timeout 5000 --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul _src/test/main.coffee -R spec",

@@ -54,6 +54,9 @@ class RSMQWorker extends require( "mpbasic" )()
 
 			# **RSMQWorker.host** *String* Host to connect to redis if no `rsmq` or `redis` instance has been defiend
 			host: "localhost"
+
+			password: null
+
 			# **RSMQWorker.host** *Number* Port to connect to redis if no `rsmq` or `redis` instance has been defiend
 			port: 6379
 			# **RSMQWorker.options** *Object* Options to connect to redis if no `rsmq` or `redis` instance has been defiend
@@ -360,7 +363,7 @@ class RSMQWorker extends require( "mpbasic" )()
 		if @config.redis?.constructor?.name is "RedisClient"
 			return new RSMQ( client: @config.redis, ns: @config.redisPrefix )
 		else
-			return new RSMQ( host: @config.host, port: @config.port, options: @config.options, ns: @config.redisPrefix )
+			return new RSMQ( host: @config.host, port: @config.port, password: @config.password, options: @config.options, ns: @config.redisPrefix )
 
 	###
 	## _initQueue

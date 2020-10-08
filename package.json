@@ -1,6 +1,6 @@
 {
   "name": "rsmqw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "rsmqw",
   "main": "index.js",
   "directories": {
@@ -13,7 +13,7 @@
     "coffeescript": "^2.5.1",
     "lodash": "4.x",
     "mpbasic": "0.0.x",
-    "rsmqw": "1.0.0"
+    "rsmqw": "1.0.1"
   },
   "devDependencies": {
     "coffee-coverage": "1.x",

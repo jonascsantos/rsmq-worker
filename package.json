@@ -1,28 +1,13 @@
 {
   "name": "rsmq-worker-password",
-  "version": "0.5.3",
-  "description": "RSMQ helper to simply implement a worker around the message queue",
-  "keywords": [],
-  "homepage": "https://github.com/jonascsantos/rsmq-worker",
-  "bugs": "https://github.com/jonascsantos/rsmq-worker/issues",
-  "author": {
-    "name": "jonascsantos",
-    "email": "",
-    "url": "https://github.com/jonascsantos/rsmq-worker"
+  "version": "1.0.0",
+  "description": "![RSMQ-Worker](https://trello-attachments.s3.amazonaws.com/5481963992d9ba3848568a1b/600x194/61b3b6117eeb0881c919c6996adb2620/rsmq_worker_small.png)",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
   },
-  "main": "./index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jonascsantos/rsmq-worker.git"
-  },
-  "scripts": {
-    "test": "COFFEECOV_INIT_ALL=false mocha --timeout 5000 --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul _src/test/main.coffee -R spec",
-    "test-cov": "npm run test; istanbul report text-summary lcov"
-  },
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "license": "MIT",
   "dependencies": {
     "async": "2.1.x",
     "coffeescript": "^2.5.1",
@@ -44,5 +29,19 @@
     "mocha": "3.2.x",
     "randoms": "0.x",
     "should": "11.x"
-  }
+  },
+  "scripts": {
+    "test": "COFFEECOV_INIT_ALL=false mocha --timeout 5000 --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul _src/test/main.coffee -R spec",
+    "test-cov": "npm run test; istanbul report text-summary lcov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonascsantos/rsmq-worker.git"
+  },
+  "author": "jonascsantos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonascsantos/rsmq-worker/issues"
+  },
+  "homepage": "https://github.com/jonascsantos/rsmq-worker#readme"
 }
